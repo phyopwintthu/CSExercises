@@ -21,8 +21,8 @@ namespace CSExercises
             {
                 num = 0;
             }
-            double square = Math.Sqrt(num);
-            System.Console.WriteLine("{0:0.000}", square);
+            double square = Math.Round(Math.Sqrt(num),3);
+            System.Console.WriteLine("{0}", square);
         }
     }
 }
