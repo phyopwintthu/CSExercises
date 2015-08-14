@@ -10,7 +10,19 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+            double num;
+            System.Console.Write("Please enter double number ");
+            string str = Console.ReadLine();
+            try
+            {
+                num = Convert.ToDouble(str);
+            }
+            catch
+            {
+                num = 0;
+            }
+            double square = Math.Sqrt(num);
+            System.Console.WriteLine("{0:0.000}", square);
         }
     }
 }

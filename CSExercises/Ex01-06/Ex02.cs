@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
               int num;
-              System.Console.Write("Enter Desire Interger ");
+              System.Console.Write("Please enter interger ");
               string str = Console.ReadLine();
               num = Convert.ToInt16(str);
               System.Console.WriteLine(num * num);
