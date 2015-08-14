@@ -10,7 +10,11 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+              int num;
+              System.Console.Write("Enter Desire Interger ");
+              string str = Console.ReadLine();
+              num = Convert.ToInt16(str);
+              System.Console.WriteLine(num * num);
         }
     }
 }
