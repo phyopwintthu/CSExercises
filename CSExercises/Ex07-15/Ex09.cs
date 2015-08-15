@@ -10,7 +10,12 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+            Console.WriteLine("Please the value of x");
+            string x_string = Console.ReadLine();
+            double x_num = Convert.ToDouble(x_string);
+            double y_num = (2 * Math.Pow(x_num,2)) - (4 * x_num) + 3;
+            Console.WriteLine("the value of x: " + x_num);
+            Console.WriteLine("the value of y: " + y_num);
         }
     }
 }
