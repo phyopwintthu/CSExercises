@@ -22,7 +22,7 @@ namespace CSExercises
                 num = 0;
             }
             double square = Math.Sqrt(num);
-            System.Console.WriteLine("{0}", square);
+            Console.WriteLine("{0}", square);
             
         }
     }

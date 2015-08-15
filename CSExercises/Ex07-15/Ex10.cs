@@ -25,11 +25,11 @@ namespace CSExercises
             double y2_num = Convert.ToDouble(y2_string);
             double distance = Math.Sqrt( Math.Pow(x2_num - x1_num,2) + Math.Pow(y2_num - y1_num, 2) );
 
-            Console.WriteLine("the value of x1: " + x1_num);
-            Console.WriteLine("the value of y1: " + y1_num);
-            Console.WriteLine("the value of x2: " + x2_num);
-            Console.WriteLine("the value of y2: " + y2_num);
-            Console.WriteLine("the distance is : " + distance);
+            Console.WriteLine("the value of x1: {0}", x1_num);
+            Console.WriteLine("the value of y1: {0}", y1_num);
+            Console.WriteLine("the value of x2: {0}", x2_num);
+            Console.WriteLine("the value of y2: {0}", y2_num);
+            Console.WriteLine("the distance is: {0}", distance);
         }
     }
 }

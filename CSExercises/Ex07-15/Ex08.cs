@@ -14,8 +14,8 @@ namespace CSExercises
             string centi = Console.ReadLine();
             double centigrade = Convert.ToDouble(centi);
             double fahrenheit = (1.8 * centigrade) + 32;
-            Console.WriteLine("Centigrade: " + centigrade);
-            Console.WriteLine("Fahrenheit: " + fahrenheit);
+            Console.WriteLine("Centigrade: {0}" , centigrade);
+            Console.WriteLine("Fahrenheit: {0}" , fahrenheit);
         }
     }
 }
