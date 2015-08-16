@@ -14,8 +14,9 @@ namespace CSExercises
             string dis_string = Console.ReadLine();
             double dis_num = Convert.ToDouble(dis_string);
             double fare = 2.40 + (dis_num * 0.4);
+            double final_fare = Math.Ceiling(fare*10)/10;
             Console.WriteLine("the distance: {0}", dis_num);
-            Console.WriteLine("the totalfare: {0:0.#0}", fare);
+            Console.WriteLine("the totalfare: {0:#.#0}", final_fare);
         }
     }
 }
