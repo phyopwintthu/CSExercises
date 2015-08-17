@@ -7,24 +7,22 @@ namespace CSExercises
         {
             Console.WriteLine("Plese Enter the distance in Kilometers");
             double dis_kilo = Convert.ToDouble(Console.ReadLine());
-            double dis_meters = dis_kilo * 1000;
+            double dis_round = Math.Ceiling(dis_kilo*10)/10;
 
-            if (dis_meters <= 500)
+            if (dis_round <= 0.5)
             {
                 double fare_cost = 2.4;
                 Console.WriteLine("Fare Cost ${0}", fare_cost);
             }
-            else if (dis_meters >= 501 && dis_meters <= 850)
+            else if (dis_round >= 0.51 && dis_round <= 8.5)
             {
-                double fare_cost = 2.4 + (dis_meters / 10) * 0.04;
+                double fare_cost = 2.4 + (dis_round - 0.5) * 10 * 0.04;
                 Console.WriteLine("Fare Cost ${0}", fare_cost);
             }
-            else if (dis_meters >= 851)
+            else if (dis_round >= 8.51)
             {
-                //double fare_cost1 = 2.4 + (dis_meters / 10) * 0.04;
-                //double fare_cost2 = 2.4 + ((dis_meters-850)/10) * 0.05;
-                //double fare_cost = fare_cost1 + fare_cost2;
-                // Console.WriteLine("Fare Cost ${0}", fare_cost);
+                double fare_cost = 2.4 + (85 * 0.04) + (dis_round * 10 - 90) * 0.05;
+                Console.WriteLine("Fare Cost ${0}", fare_cost);
             }
             else
             {
