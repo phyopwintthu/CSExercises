@@ -46,9 +46,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSExercises.Ex38</StartupObject>
+    <StartupObject>CSExercises.Ex36</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
