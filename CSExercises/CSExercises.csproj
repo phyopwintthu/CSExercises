@@ -49,7 +49,7 @@
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSExercises.Ex39</StartupObject>
+    <StartupObject>CSExercises.Ex41</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
